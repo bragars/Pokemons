@@ -1,6 +1,4 @@
-React
-
-Este trabalho tem como objetivo a implementação de um front para a api pokedex. 
+Este trabalho tem como objetivo a implementação de um front para a api pokedex com React. 
 Funcionalidades da aplicação:
 
 1. Tela de login: ​ Uma tela onde o usuário poderá informar um nome de usuário. Caso o
