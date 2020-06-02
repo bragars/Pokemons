@@ -48,4 +48,3 @@ Remove ​ :pokemon​ da lista de favoritos de ​ :username
 Links que podem ser usados como referência:
 1. https://pokedex.org/
 2. https://www.pokemon.com/br/pokedex/
-3. https://dieg0d.github.io/links.github.io
