@@ -1,0 +1,253 @@
+#links {
+    display: flex;
+}
+
+.cabecalho {
+    background-color: darkblue;
+    padding: 30px;
+    margin: 40px;
+    text-align: center;
+    height: 20px;
+    color:white;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.cabecalho:hover { 
+    color: purple;
+}
+
+ * {
+    background-color: AliceBlue;
+} 
+
+#each-pokemon {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#favoritos-pokemon {
+    margin-left: 15%;
+    padding: 20px;
+    display: flex;
+}
+
+#favorito {
+    padding: 20px;
+}
+
+.noFavorito {
+    font-size: 30px;
+    padding: 60px;
+}
+
+#root {
+    height: auto;
+    width: auto;
+}
+
+.img {
+    width: auto;
+    height: auto;
+}
+
+.pokemon {
+    width: 195px;
+    padding: 30px;
+    border: 1px solid pink;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif; 
+    color: darkblue;
+}
+
+.btn {
+    padding: 20px;
+    justify-content: right;
+}
+
+.btn-more{
+    padding: 50px;
+    border: 1px solid black;
+    margin-left: 600px;
+    margin-bottom: 20px;
+}
+
+.modal {
+    justify-content: center;
+}
+
+.kindDiv {
+    display: flex;
+    justify-content: space-around;
+}
+
+.kindDiv > p {
+   border: 2px solid pink;
+   padding: 10px;
+   font-size: large;
+}
+
+.tags {
+    background-color: black;
+}
+
+#mais {
+    padding: 40px;
+}
+
+.icon-heart {
+    height: 60px;
+    padding: 10px;
+}
+
+.icon-heart:hover {
+    color: grey;
+}
+
+.fire {
+    color: red;
+}
+
+.water {
+    color: blue;
+}
+
+.grass {
+    color: green;
+}
+
+.bug {
+    color: green;
+}
+
+.poison {
+    color: purple;
+}
+
+.electric {
+    color: #c6b713;
+}
+
+.ground {
+    color: grey;
+}
+
+.fighting {
+    color: red;
+}
+
+.fairy {
+    color: purple;
+}
+
+.psychic {
+    color: grey;
+}
+
+.normal {
+    color: grey;
+}
+
+.default {
+    color: #2d160f;
+}
+
+.logincima{height: 10vh; }
+
+.logincaixa{ width: 30%; background-color:darkblue;  border: 1px solid darkblue; border-radius: 5px; height: 100%; margin:100px; float: right; padding:100px 0px 500px 0px; text-align: center;}
+
+#myForm{
+    color: white; background-color:darkblue;
+    height: 100%;
+    border-radius: 5px;
+    padding:10px 10px 5px 10px;
+}
+
+.caixa {
+    height: calc(100% - 200px);
+    display: flex;
+    padding:100px;
+    float: right;
+}
+
+button.loginbotao{background-color: darkblue; margin: 0px 0px 0px 2%; border-radius: 5px; color:white; border-color: white;}
+
+input.logininput{width: 50%; color: darkblue; background-color: white;}
+
+footer {background-color:CornflowerBlue; padding: 1rem 2rem; font-size: small; text-align: center; color: white; height: auto;}
+
+label.labellogin{
+    background-color: darkblue;
+}
+
+
+.index{text-align: center;  position: fixed; top: 50%; left: 50%; margin-top: -150px; margin-left: -200px; border: 1px solid darkblue; border-radius: 5px; padding:100px;}
+
+
+#gabrielteste {
+    height: 100vh;
+    /* background-image: url(https://image.redbull.com/rbcom/010/2017-03-24/1331850815327_2/0010/1/1600/1067/1/pok%C3%A9mon-le-curiosit%C3%A0-sui-pi%C3%B9-strani-e-disturbanti-9.jpg); */
+    background-image: url(https://2.bp.blogspot.com/-asSXsfciqXc/T4HBXSMu35I/AAAAAAAAAvU/CPvQDaotuAo/s1600/Princess_Andria_Blog_-Togepi_Pokemon-.gif);
+}
+
+/* 100vh */
+
+.user {
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.userName {
+    font-size: 30px;
+    padding: 20px;
+}
+
+.user-page {
+    width: 100%;
+    height: 50vh;
+}
+
+.user-caixa {
+    width: 100%;
+    padding: 50px;
+}
+
+.user-image {
+    width: auto;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.userId {
+    font-size: large;
+}
+
+.userName {
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+#usuario2 {
+    height: auto;
+}
+
+.frases {
+    color: #2d160f;
+    font-weight: lighter;
+}
+
+.link {
+    padding: 20px;
+    text-decoration: none;
+    color: grey
+}
+
+.link:hover {
+    color: purple;
+}
