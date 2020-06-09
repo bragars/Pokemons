@@ -1,111 +1,89 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshoot
+# Este trabalho tem como objetivo a implementação de um front para a api pokedex com React. 
 
 
+## Funcionalidades da aplicação:
 
-- GET /pokemons
-
-- GET/pokemons/:name
-
-- GET /users/:username
-    username
-    favoritos
-
-- POST /users
-    registra um novo usuário no sistema
-    enviando um username
-
-- DELETE/users/:username/starred/:pokemon
-    remove pokemon da lista de favoritos 
-    de username
+### 1. Tela de login: ​ Uma tela onde o usuário poderá informar um nome de usuário. Caso o
+usuário não exista, a API irá registrar um novo e retornar os dados. Se já existir, ela retorna
+uma msg dizendo que já existe.
 
 
-  //If you need to interact with the browser, perform 
-  //your work in componentDidMount() or the other lifecycle methods instead
-
-  //componentDidMount() is invoked immediately AFTER a component is mounted (inserted into the tree).
-//   async componentWillMount() {
-// 	const response = axios.get('https://pokedex20201.herokuapp.com/users')
-// 	// const json = await response;
-// 	// const jsonData = await (await response).data;
-// 	const jsonDataData = await (await (await response).data).data;
-// 	console.log(Array.from(jsonDataData));
-// 	let data = this.state.data.concat(jsonDataData);
-// 	usersData.push(data);
-// 	console.log(data);
-// 	this.setState({
-// 		data
-// 	})}
+### 2. Tela inicial: ​ O usuário conseguirá ver todos os pokémons cadastrados na API.
 
 
-// componentWillReceiveProps -- When component receives new props
-		// shouldComponentUpdate -- Before rendering, after receiving new props or state
-		// componentWillUpdate -- Before rendeering, after receiving new props or state
-		// componentDidUpdate -- After component's updates are flushed to DOM
-		// componentWillUnmount -- Immediately before removing component from DOMing#npm-run-build-fails-to-minify
+### 3. Tela de Perfil: ​ O usuário poderá ver seu perfil e todos os pokémons que ele favoritou e
+desfavoritar quaisquer pokémon.
+
+
+### 4. Tela de perfil do Pokémon: ​ O usuário poderá ver as informações sobre o pokémon e
+favoritar ele.
+
+
+### Bibliotecas usadas:
+1. axios: ​ Biblioteca usada para fazer requisições para qualquer API;
+> link: ​ https://github.com/axios/axios
+> link: ​ https://alligator.io/react/axios-react/
+```javascript
+$ npm install axios
+```
+
+2. reach router: ​ Biblioteca usada para fazer o roteamento da aplicação;
+> link: ​ https://reach.tech/router
+```javascript
+$ npm i react-modal
+```
+
+3. react-modal: ​ Biblioteca usada para interagir com um modal;
+> link: ​https://www.npmjs.com/package/react-modal
+```javascript
+npm install @reach/router
+```
+
+### Documentação da Pokédex API:
+> Essa API está disponível em https://pokedex20201.herokuapp.com
+
+
+### 1. GET /pokemons
+Acesso ao catálogo de pokémons. Essa rota retorna um documento JSON que contém uma lista de
+pokŕmons. Um máximo de 25 elementos serão retornados, para continuar com a listagem, acrescente
+?page=N​ ao final da rota, substiuindo N pela numeração da próxima página.
+
+
+### 2. GET /pokemons/:name
+Substitua ​ :name​ pelo identificador de um pokémon específico para receber as informações
+do pokémon específico.
+
+
+### 3. GET /users/:username
+Obtém as informações do usuário ​ :username​ , incluíndo os pokémons favoritos daquele
+usuário. Substitua ​ :username ​ pelo nome do usuário.
+
+
+### 4. POST /users
+Registra um novo usuário no sistema. Deverá ser enviado um username para o usuário a
+ser registrado.
+
+
+### 5. POST /users/:username/starred/:pokemon
+Acrescenta pokémon à lista de favoritos de ​ :username
+
+
+### 6. DELETE /users/:username/starred/:pokemon
+Remove ​ :pokemon​ da lista de favoritos de ​ :username
+
+
+## Links que podem ser usados como referência:
+> 1. https://pokedex.org/
+> 2. https://www.pokemon.com/br/pokedex/
+
+- [x] Tarefa Cumprida
+
+
+
+## Para iniciar a applicação 
+```javascript
+$ yarn start
+```
+> Abra http://localhost:3000 para ver no browser.
+> Entre com seu username
+> E comece a favoritar seus pokemons que você mais gosta 
