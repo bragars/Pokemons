@@ -16,6 +16,7 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
+  local_dir: build
   github-token: $GITHUB_TOKEN
   on:
     branch: atualizacoes
