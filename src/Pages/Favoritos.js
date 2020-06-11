@@ -44,6 +44,7 @@ class Favoritos extends Component {
     render(){
         return(
             <>
+
             <div id="links-favorito">
                 <Link className="link-favorito" to={"/pokedex"}>Pokedex</Link>
                 <Link className="link-favorito" to={"/usuario"}>My Page</Link>
@@ -102,6 +103,7 @@ class Favoritos extends Component {
                     }
 
                 </div>
+                
             </>
         )
     }
