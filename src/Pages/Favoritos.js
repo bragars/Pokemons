@@ -44,6 +44,10 @@ class Favoritos extends Component {
     render(){
         return(
             <>
+            <div id="links-favorito">
+                <Link className="link-favorito" to={"/pokedex"}>Pokedex</Link>
+                <Link className="link-favorito" to={"/usuario"}>My Page</Link>
+            </div>
             <h1 className="header">Meus Pokemons</h1>
                 <div id="favoritos-pokemon">
                     {
@@ -53,11 +57,11 @@ class Favoritos extends Component {
                                     <div className="noFavorito">
                                         <p>Empty</p>
                                         <p>Let's add some pokemons</p>
+                                        <p>Go to Pokedex</p>
                                         <div className="sad">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS-7xTwK-d9nOQXkSwp-eUCr3YwxuroYfN-mVYk06j-HMKHZSyk&usqp=CAU" />
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS-7xTwK-d9nOQXkSwp-eUCr3YwxuroYfN-mVYk06j-HMKHZSyk&usqp=CAU" alt="no-favorite"/>
                                         </div>
-                                    </div>
-                                    <Link className="cabecalho" to={"/pokedex"}>Pokedex</Link>	
+                                    </div>	
                                 </div>
                         ) : (
                             this.state.data.length === 0 && this.state.error === false ? (

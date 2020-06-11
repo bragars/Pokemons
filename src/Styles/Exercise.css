@@ -2,6 +2,23 @@
     display: flex;
 }
 
+#links-favorito {
+    padding: 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link-favorito {
+    text-decoration: none;
+    color: grey;
+}
+
+.link-favorito:hover {
+    text-decoration: none;
+    color: purple;
+}
+
 .cabecalho {
     background-color: darkblue;
     padding: 30px;
@@ -245,7 +262,7 @@ label.labellogin{
 .link {
     padding: 20px;
     text-decoration: none;
-    color: grey
+    color: grey;
 }
 
 .link:hover {
