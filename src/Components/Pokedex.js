@@ -57,29 +57,31 @@ class Testing extends Component {
         return(
             <>
             <div id="each-pokemon">
-                {this.state.data.map((el,i) => (
-                    <div key={i}>
-                        <Modal el={el}/>
-                        <div className="pokemon">
-                            <img src={el.image_url} alt="Pokemon"/>
-                            <p>{el.id}</p>
-                            <span>{el.name}</span>
-                            <div className={
-                                  el.kind === 'fire'     ? 'fire'
-                                : el.kind === 'water'    ? 'water'
-                                : el.kind === 'grass'    ? 'grass'
-                                : el.kind === 'bug'      ? 'bug'
-                                : el.kind === 'poison'   ? 'poison'
-                                : el.kind === 'ground'   ? 'ground'
-                                : el.kind === 'electric' ? 'electric'
-                                : el.kind === 'fighting' ? 'fighting' 
-                                : el.kind === 'fairy'    ? 'fairy'
-                                : el.kind === 'psychic'  ? 'psychic'
-                                : 'default'
-                            }>{el.kind}</div>
+                {
+                    this.state.data.map((el,i) => (
+                        <div key={i}>
+                            <Modal el={el}/>
+                            <div className="pokemon">
+                                <img src={el.image_url} alt="Pokemon"/>
+                                <p>{el.id}</p>
+                                <span>{el.name}</span>
+                                <div className={
+                                    el.kind === 'fire'     ? 'fire'
+                                    : el.kind === 'water'    ? 'water'
+                                    : el.kind === 'grass'    ? 'grass'
+                                    : el.kind === 'bug'      ? 'bug'
+                                    : el.kind === 'poison'   ? 'poison'
+                                    : el.kind === 'ground'   ? 'ground'
+                                    : el.kind === 'electric' ? 'electric'
+                                    : el.kind === 'fighting' ? 'fighting' 
+                                    : el.kind === 'fairy'    ? 'fairy'
+                                    : el.kind === 'psychic'  ? 'psychic'
+                                    : 'default'
+                                }>{el.kind}</div>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))
+                }
             </div>
             </>
         )   

@@ -31,7 +31,6 @@ export default class Loading extends Component {
                         <Lottie options={defaultOptions} height={120} width={120} />                      
                     </div>
                 </FadeIn>
-                {/* <ReactLoading type={"bars"} color={"black"}  height={200} width={200} /> */}
             </div>
         )
     }

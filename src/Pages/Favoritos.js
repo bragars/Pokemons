@@ -32,7 +32,7 @@ class Favoritos extends Component {
             userData = this.state.data.concat(jsonDataData);
 
             userData.map((el) => {
-                let word = el.kind; //o que volta da API kind
+                let word = el.kind;
                 let indexAtual;
                 let word1 = '';
                 let word2 = '' ;
@@ -74,7 +74,7 @@ class Favoritos extends Component {
                     <Link className="link-favorito" to={"/pokedex"}>Pokedex</Link>
                     <Link className="link-favorito" to={"/usuario"}>My Page</Link>
                 </div>
-                <h1 className="header">Meus Pokemons</h1>
+                <h1 className="header">My Pokemons</h1>
                     <div id="favoritos-pokemon">
                         {
                             this.state.error === true ? 

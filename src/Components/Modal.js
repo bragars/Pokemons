@@ -58,18 +58,20 @@ class Exercise extends Component {
                        style={customStyles}
                 >
                     <div>
-                        <>{this.state.data.map((el,i) => (
-                            <div key={i}>
-                                <img src={el.image_url} alt="Pokemon"/>  
-                                <p>{el.name}</p>
-                                <p>{el.id}</p>
-                                <p>{el.kind}</p>
-                                <this.state.img
-                                className="icon-heart"
-                                onClick={this.pick}
-                                />
-                            </div>
-                        ))}</>
+                        <>{
+                                this.state.data.map((el,i) => (
+                                <div key={i}>
+                                    <img src={el.image_url} alt="Pokemon"/>  
+                                    <p>{el.name}</p>
+                                    <p>{el.id}</p>
+                                    <p>{el.kind}</p>
+                                    <this.state.img
+                                    className="icon-heart"
+                                    onClick={this.pick}
+                                    />
+                                </div>
+                            ))
+                        }</>
                         <button className="btn" onClick={() => {this.setState({modalIsOpen:false})}}>Close</button>
                     </div>
                 </Modal>

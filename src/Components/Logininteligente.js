@@ -6,7 +6,6 @@ const Logininteligente = () => {
     
     const [arrayUsers, setArrayUsers] = useState([]);
     const [done, setDone] = useState(false);
-    const [error, setError] = useState(false);
 
     useEffect(() => {
         Get();
@@ -67,20 +66,20 @@ const Logininteligente = () => {
         <>
         {
             !done ? 
-            <div id="loading">
-                <Loading />
-            </div>
-            :
-            <div id="gabrielteste">
-                <div className="caixa">
-                    <form name="myForm" id="myForm" method="get" onSubmit={enviando} >
-                        <label className="labellogin">Quem é você, treinador?</label>
-                        <br/>
-                        <input type="text" name="userid" className="logininput"></input>
-                        <button type="submit" className="loginbotao"> Enviar </button>
-                    </form>
+                <div id="loading">
+                    <Loading />
                 </div>
-            </div>
+            :
+                <div id="gabrielteste">
+                    <div className="caixa">
+                        <form name="myForm" id="myForm" method="get" onSubmit={enviando} >
+                            <label className="labellogin">Who is you coach?</label>
+                            <br/>
+                            <input type="text" name="userid" className="logininput"></input>
+                            <button type="submit" className="loginbotao"> Send </button>
+                        </form>
+                    </div>
+                </div>
         }
        </>
     )

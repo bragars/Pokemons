@@ -10,8 +10,6 @@ const Forminteligente = ({children}) => {
             if (!saidas.name) continue
             dados[saidas.name]=saidas.value;
         }
-
-        alert ('voce esta entrando como ' + dados.email);    
     };
 
     return (

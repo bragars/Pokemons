@@ -9,22 +9,23 @@ import Paths from './Paths.js'
 function New () {
     return (
     
-    <>
+        <>
 
-        <Router>
+            <Router>
 
-            <Logininteligente default></Logininteligente>
+                <Logininteligente default></Logininteligente>
 
-            <Paths path="/index"></Paths>
+                <Paths path="/index"></Paths>
 
-            <Capture path="/pokedex"></Capture>
+                <Capture path="/pokedex"></Capture>
 
-            <Favoritos path="/favoritos"></Favoritos>
+                <Favoritos path="/favoritos"></Favoritos>
 
-            <Getuser path="/usuario"> </Getuser>
+                <Getuser path="/usuario"> </Getuser>
 
-        </Router>
-    </>
+            </Router>
+            
+        </>
     );
 }
 
