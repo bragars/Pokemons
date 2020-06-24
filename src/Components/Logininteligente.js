@@ -53,7 +53,7 @@ const Logininteligente = () => {
                         localStorage.setItem('username', dados.userid);
                         window.location.href = "/index";
                     })
-                    .catch(error => {
+                    .catch(() => {
                         alert('Houve um problema com sua conexão, tente novamente !');
                     })
                 }
