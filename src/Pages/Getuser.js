@@ -10,7 +10,7 @@ class Getuser extends Component {
 	
 	async componentWillMount() {
 		let name = this.state.name;
-		
+
 		const jsonData =  await Axis(name);
 		this.setState({
 			data:jsonData
