@@ -4,7 +4,7 @@ import Loading from '../Components/Loading'
 
 const Logininteligente = () => {
     
-    const [arrayUsers, setArrayUsers] = useState([]);
+    const [arrayUsers] = useState([]);
     const [done, setDone] = useState(false);
 
     useEffect(() => {
@@ -28,6 +28,7 @@ const Logininteligente = () => {
                 setDone(true);
             }
         }
+        // eslint-disable-next-line
     }, [])
 
     const enviando = (event) => {
