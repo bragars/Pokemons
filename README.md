@@ -1,3 +1,5 @@
+https://pokedex-project-yertis.netlify.app/
+
 # Este trabalho tem como objetivo a implementação de um front para a api pokedex com React. 
 
 
