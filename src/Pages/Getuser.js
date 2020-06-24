@@ -2,8 +2,6 @@ import React,{ Component } from 'react'
 import axios from 'axios'
 import { Link } from '@reach/router';
 
-let userData = [];
-
 class Getuser extends Component {
 	state = {
 		data: [],
@@ -13,24 +11,21 @@ class Getuser extends Component {
 	async componentWillMount() {
 		let name = this.state.name;
 		
-		await Axis(name);
+		const jsonData =  await Axis(name);
+		this.setState({
+			data:jsonData
+		})
+		
 		async function Axis(name) {
 			let response = await axios.get(`https://pokedex20201.herokuapp.com/users/${name}`)
-			console.log(response);
 			let jsonData = await(await response.data).user;
-			userData = userData.concat(jsonData);
-			userData =  userData[0];
-			return userData;
+			return jsonData;
 		} 
-		this.setState({
-			data:userData
-		})
 	}
 
 	render() {
 		return(
 			<>	
-				<h1 className="header"></h1>
 				<div id="usuario2"> 
 				{this.state.data.id >= 1 ? (
 					<div className="user">
@@ -54,9 +49,6 @@ class Getuser extends Component {
 					<p></p>
 				)}
 				</div> 
-				<div id="Pokemons">
-					<h1 id="Pokemons-user"></h1>
-				</div>
 			</>
 		)	
 	}

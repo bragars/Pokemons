@@ -11,7 +11,6 @@ const Forminteligente = ({children}) => {
             dados[saidas.name]=saidas.value;
         }
 
-        console.log(dados);  
         alert ('voce esta entrando como ' + dados.email);    
     };
 

@@ -39,9 +39,16 @@
 } 
 
 #each-pokemon {
-    padding: 20px;
+    margin-left: 70px;
+    padding: 30px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.pokemon {
+    padding: 80px;
+    border: 1px solid pink;
+    text-align: center;
 }
 
 #favoritos-pokemon {
@@ -67,13 +74,6 @@
 .img {
     width: auto;
     height: auto;
-}
-
-.pokemon {
-    width: 195px;
-    padding: 30px;
-    border: 1px solid pink;
-    text-align: center;
 }
 
 .header {
@@ -119,11 +119,12 @@
 
 .icon-heart {
     height: 60px;
-    padding: 10px;
+    cursor: pointer;
+    color: black;
 }
 
 .icon-heart:hover {
-    color: grey;
+    color: red;
 }
 
 .fire {
@@ -207,7 +208,8 @@ label.labellogin{
 
 
 #gabrielteste {
-    height: 100vh;
+    height: 150vh;
+    width: 100%;
     /* background-image: url(https://image.redbull.com/rbcom/010/2017-03-24/1331850815327_2/0010/1/1600/1067/1/pok%C3%A9mon-le-curiosit%C3%A0-sui-pi%C3%B9-strani-e-disturbanti-9.jpg); */
     background-image: url(https://2.bp.blogspot.com/-asSXsfciqXc/T4HBXSMu35I/AAAAAAAAAvU/CPvQDaotuAo/s1600/Princess_Andria_Blog_-Togepi_Pokemon-.gif);
 }
@@ -267,4 +269,13 @@ label.labellogin{
 
 .link:hover {
     color: purple;
+}
+
+#loading {
+    display: flex;
+    justify-content: center;
+}
+
+.loading-icon {
+    padding: 200px;
 }

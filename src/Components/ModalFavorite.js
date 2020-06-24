@@ -40,9 +40,7 @@ class ModalFavorite extends Component {
         
         await Axis();
         async function Axis(){
-            const response = Axios.delete(`https://pokedex20201.herokuapp.com/users/${name}/starred/${pokemon}`);
-            let resposta = await response;
-            console.log(resposta);
+            Axios.delete(`https://pokedex20201.herokuapp.com/users/${name}/starred/${pokemon}`);
         }
         window.location.reload(true);
     }

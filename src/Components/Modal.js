@@ -6,7 +6,7 @@ import Axios from 'axios';
 Modal.setAppElement('#root');
 
 let count = 0;
-let array = []
+let array = [];
 
 const customStyles = {
     content : {
